@@ -1,0 +1,136 @@
+body 
+{
+  padding:0px;
+  margin:0px;
+  height:100%;
+  background:#808080;
+}
+.breadcrumbs
+{
+  padding-left: 20px;
+  height:20px;
+  border: 3px solid #000000;
+  margin-bottom:3px;
+  background:#FFFFFF; 
+}
+
+.errorExplanation
+{
+  border-top: 5px solid #B50D37;
+  background: #DE5073;
+  border-bottom: 5px solid #B50D37;
+  padding-left:20px;
+  margin-bottom:20px;
+}
+
+.notice
+{
+  text-align:center;
+  border-top: 5px solid #B50D37;
+  background: #DE5073;
+  border-bottom: 5px solid #B50D37;
+  margin:20px 0;
+  
+}
+
+#header
+{
+  height:47px;
+  background:#FFFFFF;
+  border: 3px solid #000000;
+  text-align:center;
+  margin-bottom:3px;
+}
+.PermLinks
+{
+  height:30px;
+}
+.left
+{
+  float:left;
+  text-align:left;
+}
+.right
+{
+  float:right;
+  text-align:right;
+}
+#wrapper
+{
+  width:1000px;
+  margin: 10px auto 0px;
+}
+#content
+{
+  background:#FFFFFF;
+  border: 3px solid #000000;
+  margin-bottom:3px;
+  min-height:800px;
+}
+
+#footer
+{
+  background:#FFFFFF;
+  padding:10px 0;
+  text-align:center;
+  border: 3px solid #000000;
+}
+
+h1
+{
+  margin:0px;
+  padding:0px;
+}
+
+table 
+{ 
+  border-collapse: collapse; 
+  width: 95%;
+  text-align:left;
+  margin: 10px auto;
+}
+td, th 
+{ 
+  padding: 5px; 
+  border: 1px solid #808080; 
+  vertical-align:top;
+}
+td#icons
+{
+  min-width:35px;
+}
+
+.field_with_errors 
+{ 
+  display: inline; 
+}
+.field_with_errors input, .field_with_errors textarea 
+{ 
+  border: 1px solid #ff0000; 
+}
+
+#serv_title
+{
+  font-weight:bold;
+}
+#serv_desc
+{
+  height:120px;
+}
+#serv_func
+{
+
+}
+#prod_title
+{
+  font-weight:bold;
+}
+#prod_desc
+{
+
+}
+#prod_func
+{
+
+}
+

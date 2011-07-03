@@ -1,0 +1,27 @@
+<% @title = "#{@service.name}: Product Inventory" %>
+
+<table>  
+  <% @products.each do |prod| %>
+    <tr>
+      <th width="200px">
+        <%= image_tag(prod.img, :size => "200x140") || "" %>    
+      </th>
+      <td>
+        <div id="prod_title">
+          <%= prod.id %>. 
+          <%= prod.name %>
+          <div class="right">
+            <%= link_to(image_tag("icons/page_edit.png"), edit_service_product_path(@service, prod)) %>
+            <%= link_to(image_tag("icons/heart_delete.png"), service_product_path(@service, prod), :method => :delete, :confirm => "Are you sure you want to permanently delete the #{prod.name}?") %>
+          </div>
+        </div>
+        <div id="prod_desc">
+          <%= prod.desc %>
+        </div>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<div id="prod_func">
+  <%= link_to(image_tag("icons/heart_add.png"), new_service_product_path(@service) ) %> Create
+</div>

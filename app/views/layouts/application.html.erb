@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Wild Fire Herbalists
+    </title>
+    <%= stylesheet_link_tag 'formtastic', 'my_formtastic_changes' %>
+    <!--[if IE 6]><%= stylesheet_link_tag 'formtastic_ie6' %><![endif]-->
+    <!--[if IE 7]><%= stylesheet_link_tag 'formtastic_ie7' %><![endif]-->
+    <%= stylesheet_link_tag "style" %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+  </head>
+  
+  <body>
+    
+    <div id="wrapper">      
+      <div id="header">
+        <h1>
+          <%= @title %>
+        </h1>
+      </div>
+      <div class="breadcrumbs">
+        <div class="left">
+          <%= render :partial => "#{controller.controller_name}/breadcrumb" %>
+        </div>
+        <div class="right">
+        </div>
+      </div>
+      <% if flash[:notice] %>
+        <div class="notice">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+      <div id="content">
+        <%= yield %>
+      </div>
+      <div id="footer">
+        Copyright 2011 - Made by Somnie  
+      </div>        
+    </div>
+    
+  </body>
+  
+</html>
