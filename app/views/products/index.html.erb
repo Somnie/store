@@ -1,14 +1,16 @@
 <% @title = "#{@service.name}: Product Inventory" %>
 
 <table>  
+  <% i = 1 %>
   <% @products.each do |prod| %>
     <tr>
       <th width="200px">
-        <%= image_tag(prod.img, :size => "200x140") || "" %>    
+        <%= image_tag prod.img.url(:small) || "" %>    
       </th>
       <td>
         <div id="prod_title">
-          <%= prod.id %>. 
+          <%= i %>.
+          <% i = i+1 %>
           <%= prod.name %>
           <div class="right">
             <%= link_to(image_tag("icons/page_edit.png"), edit_service_product_path(@service, prod)) %>

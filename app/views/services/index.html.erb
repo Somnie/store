@@ -1,14 +1,16 @@
-<% @title = "Service Inventory" %>
+<% @title = "Services" %>
 
 <table>  
+    <% i = 1%>
     <% @services.each do |serv| %>
     <tr>
       <th width="200px">
-        <%= link_to(image_tag(serv.img, :size => "200x140"),  service_products_path(serv)) || "" %>    
+      <%= link_to(image_tag(serv.img.url(:small)), service_products_path(serv)) || "" %>     
       </th>
       <td>
         <div id="serv_title">
-          <%= serv.id %>. 
+          <%= i %>.
+          <% i = i+1 %>
           <%= link_to(serv.name, service_products_path(serv)) %>
           <div class="right">
             <%= link_to(image_tag("icons/page_edit.png"), edit_service_path(serv)) %>

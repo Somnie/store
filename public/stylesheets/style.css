@@ -35,7 +35,17 @@ body
 
 #header
 {
-  height:47px;
+  height:36px;
+  padding:3px 0;
+  background:#FFFFFF;
+  border: 3px solid #000000;
+  text-align:center;
+  margin-bottom:3px;
+}
+#page_title
+{
+  height:26px;
+  padding:3px 0;
   background:#FFFFFF;
   border: 3px solid #000000;
   text-align:center;
@@ -58,14 +68,14 @@ body
 #wrapper
 {
   width:1000px;
-  margin: 10px auto 0px;
+  margin: 10px auto 10px;
 }
 #content
 {
   background:#FFFFFF;
   border: 3px solid #000000;
   margin-bottom:3px;
-  min-height:800px;
+  min-height:770px;
 }
 
 #footer
@@ -76,12 +86,19 @@ body
   border: 3px solid #000000;
 }
 
-h1
+h1, h2
 {
   margin:0px;
   padding:0px;
 }
-
+h1
+{
+  font-size:30px;
+}
+h2
+{
+  font-size:20px;
+}
 table 
 { 
   border-collapse: collapse; 

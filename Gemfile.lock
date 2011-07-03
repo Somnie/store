@@ -30,6 +30,7 @@ GEM
     activesupport (3.0.3)
     arel (2.0.10)
     builder (2.1.2)
+    cocaine (0.1.0)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     formtastic (1.2.4)
@@ -43,6 +44,10 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    paperclip (2.3.12)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+      cocaine (>= 0.0.2)
     polyglot (0.3.1)
     rack (1.2.3)
     rack-mount (0.6.14)
@@ -76,7 +81,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  formtastic
+  formtastic (= 1.2.4)
+  paperclip (~> 2.3)
   rails (= 3.0.3)
   sqlite3-ruby
-  will_paginate
+  will_paginate (= 2.3.15)
