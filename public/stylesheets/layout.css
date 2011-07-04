@@ -1,0 +1,83 @@
+body {
+    background: url("http://www.anuas.org/templates/steammatrix/images/bodybg.png") repeat-x scroll 0 0 #20425E;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+#page_holder {
+    font-size: 0.85em;
+    margin: 0 auto;
+}
+#page {
+    margin: auto;
+    width: 960px;
+}
+#page_wrapper {
+    margin: 0 -25px;
+    width: 1010px;
+}
+#top_shadow {
+    background: url("http://www.anuas.org/templates/steammatrix/images/Halo_rm_mod2.png") no-repeat scroll center top transparent;
+    height: 520px;
+    margin: 0 auto;
+    min-width: 960px;
+    overflow: hidden;
+    width: 100%;
+}
+#container_shadow {
+    background: url("http://www.anuas.org/templates/steammatrix/images/side_shadow.png") repeat-y scroll 0 0 transparent;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#container {
+    display: inline;
+    float: left;
+    margin: -495px 25px 0;
+    width: 960px;
+}
+#content {
+    background-color: #FFFFFF;
+    min-height: 140px;
+    padding: 25px;
+}
+
+#footer {
+    background-color: #FFFFFF;
+    padding: 25px;
+    text-align: center;
+}
+#bottom_shadow 
+{
+    background: url("http://www.anuas.org/templates/steammatrix/images/bottom-shadow.png") no-repeat scroll center top transparent;
+    height: 40px;
+    margin: 0 auto;
+    min-width: 960px;
+    overflow: hidden;
+    width: 100%;
+}
+#header
+{
+  height:45px;
+  padding:85px 0;
+  text-align:center;
+}
+#page_title
+{
+  height:26px;
+  padding:3px 0;
+  background:#FFFFFF;
+  text-align:center;
+}
+#breadcrumbs
+{
+  padding-left: 20px;
+  height:20px;
+  background:#FFFFFF; 
+}
+.spacer
+{
+  height:3px;
+}

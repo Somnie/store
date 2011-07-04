@@ -1,10 +1,10 @@
-1309681095
-AddAttachmentImgToService	/home/somnie/www/store/db/migrate/20110703060314_add_attachment_img_to_service.rb	class AddAttachmentImgToService 
+1309778169
 AddProducts	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	class AddProducts 
 Application	/home/somnie/www/store/config/application.rb	  class Application 
 ApplicationController	/home/somnie/www/store/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/somnie/www/store/app/helpers/application_helper.rb	module ApplicationHelper
 BrowsingTest	/home/somnie/www/store/test/performance/browsing_test.rb	class BrowsingTest 
+DescriptionMod	/home/somnie/www/store/db/migrate/20110703113407_description_mod.rb	class DescriptionMod 
 ImgManager	/home/somnie/www/store/db/migrate/20110703050204_img_manager.rb	class ImgManager 
 Product	/home/somnie/www/store/app/models/product.rb	class Product 
 ProductsController	/home/somnie/www/store/app/controllers/products_controller.rb	class ProductsController 
@@ -21,6 +21,7 @@ addText	/home/somnie/www/store/public/javascripts/controls.js	function addText(m
 all	/home/somnie/www/store/public/javascripts/prototype.js	function all(iterator, context)
 any	/home/somnie/www/store/public/javascripts/prototype.js	function any(iterator, context)
 argumentNames	/home/somnie/www/store/public/javascripts/prototype.js	function argumentNames()
+authenticate	/home/somnie/www/store/app/controllers/application_controller.rb	  def authenticate
 bind	/home/somnie/www/store/public/javascripts/prototype.js	function bind(context)
 bindAsEventListener	/home/somnie/www/store/public/javascripts/prototype.js	function bindAsEventListener(context)
 blank	/home/somnie/www/store/public/javascripts/prototype.js	function blank()
@@ -56,7 +57,7 @@ dirNodeCheck	/home/somnie/www/store/public/javascripts/prototype.js	function dir
 dispatch	/home/somnie/www/store/public/javascripts/effects.js	function dispatch(effect, eventName)
 down	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	  def self.down
 down	/home/somnie/www/store/db/migrate/20110703050204_img_manager.rb	  def self.down
-down	/home/somnie/www/store/db/migrate/20110703060314_add_attachment_img_to_service.rb	  def self.down
+down	/home/somnie/www/store/db/migrate/20110703113407_description_mod.rb	  def self.down
 each	/home/somnie/www/store/public/javascripts/prototype.js	function each(iterator)
 each	/home/somnie/www/store/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/somnie/www/store/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -167,6 +168,7 @@ scan	/home/somnie/www/store/public/javascripts/prototype.js	function scan(patter
 select	/home/somnie/www/store/public/javascripts/prototype.js	function select()
 select	/home/somnie/www/store/public/javascripts/prototype.js	function select(selector, scope)
 set	/home/somnie/www/store/public/javascripts/prototype.js	function set(key, value)
+show	/home/somnie/www/store/app/controllers/products_controller.rb	  def show
 size	/home/somnie/www/store/public/javascripts/prototype.js	function size()
 size	/home/somnie/www/store/public/javascripts/prototype.js	function size()
 sortBy	/home/somnie/www/store/public/javascripts/prototype.js	function sortBy(iterator, context)
@@ -208,7 +210,7 @@ uniq	/home/somnie/www/store/public/javascripts/prototype.js	function uniq(sorted
 unset	/home/somnie/www/store/public/javascripts/prototype.js	function unset(key)
 up	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	  def self.up
 up	/home/somnie/www/store/db/migrate/20110703050204_img_manager.rb	  def self.up
-up	/home/somnie/www/store/db/migrate/20110703060314_add_attachment_img_to_service.rb	  def self.up
+up	/home/somnie/www/store/db/migrate/20110703113407_description_mod.rb	  def self.up
 update	/home/somnie/www/store/app/controllers/products_controller.rb	  def update
 update	/home/somnie/www/store/app/controllers/services_controller.rb	  def update
 update	/home/somnie/www/store/public/javascripts/prototype.js	function update(array, args)

@@ -4,6 +4,7 @@ gem 'rails', '3.0.3'
 gem 'formtastic', '1.2.4'
 gem 'will_paginate', '2.3.15'
 gem "paperclip", "~> 2.3"
+gem 'authlogic', '2.1.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

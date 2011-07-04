@@ -1,0 +1,20 @@
+#show_img
+{
+  float:left;
+  padding:0 5px 0 0;
+}
+#show_name
+{
+  font-weight:bold;
+  font-size:20px;
+  margin: 0 0 5px 0;
+}
+#show_desc_long
+{
+  min-height:240px;
+}
+#show_price
+{
+  float:right;
+  margin: 0 20px 0 0;
+}

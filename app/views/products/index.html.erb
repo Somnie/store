@@ -5,13 +5,13 @@
   <% @products.each do |prod| %>
     <tr>
       <th width="200px">
-        <%= image_tag prod.img.url(:small) || "" %>    
+        <%= link_to(image_tag(prod.img.url(:small)), service_product_path(@service, prod)) || "" %>
       </th>
       <td>
         <div id="prod_title">
           <%= i %>.
           <% i = i+1 %>
-          <%= prod.name %>
+          <%= link_to(prod.name, service_product_path(@service, prod)) %>
           <div class="right">
             <%= link_to(image_tag("icons/page_edit.png"), edit_service_product_path(@service, prod)) %>
             <%= link_to(image_tag("icons/heart_delete.png"), service_product_path(@service, prod), :method => :delete, :confirm => "Are you sure you want to permanently delete the #{prod.name}?") %>

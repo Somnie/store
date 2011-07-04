@@ -1,5 +1,6 @@
 class ServicesController < ApplicationController
-  
+  before_filter :authenticate, :except => [:index]
+    
   def index    
      @services = Service.all      
   end

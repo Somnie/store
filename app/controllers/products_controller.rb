@@ -1,8 +1,13 @@
 class ProductsController < ApplicationController
   before_filter :find_service
+  before_filter :authenticate, :except => [:index, :show]
   
   def index
      @products = @service.products.all 
+  end
+  
+  def show
+    @products = @service.products
   end
 
   def new

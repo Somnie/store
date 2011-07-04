@@ -7,44 +7,63 @@
     <%= stylesheet_link_tag 'formtastic', 'my_formtastic_changes' %>
     <!--[if IE 6]><%= stylesheet_link_tag 'formtastic_ie6' %><![endif]-->
     <!--[if IE 7]><%= stylesheet_link_tag 'formtastic_ie7' %><![endif]-->
+    <%= stylesheet_link_tag "layout" %>
     <%= stylesheet_link_tag "style" %>
+    <%= stylesheet_link_tag "show" %>
     <%= javascript_include_tag :defaults %>
     <%= csrf_meta_tag %>
   </head>
   
   <body>
-    
-    <div id="wrapper">      
-      <div id="header">
-        <h1>
-          Wild Fire Herbalists
-        </h1>
-      </div>
-      <div id="page_title">
-        <h2>
-          <%= @title %>
-        </h2>
-      </div>      
-      <div class="breadcrumbs">
-        <div class="left">
-          <%= render :partial => "#{controller.controller_name}/breadcrumb" %>
-        </div>
-        <div class="right">
-        </div>
-      </div>
-      <% if flash[:notice] %>
-        <div class="notice">
-          <%= flash[:notice] %>
-        </div>
-      <% end %>
-      <div id="content">
-        <%= yield %>
-      </div>
-      <div id="footer">
-        Copyright 2011 - Made by Somnie  
-      </div>        
-    </div>
-    
+    <div id="page_holder">
+      <div id="top_shadow">
+      </div><!-- top_shadow -->
+      <div id="page">
+        <div id="page_wrapper">
+          <div id="container_shadow">
+            <div id="container">
+              <div id="header">
+                <h1 class="serif">
+                  Wild Fire Herbalists
+                </h1>       
+              </div><!-- header -->
+              <div class="spacer">
+              </div><!-- spacer -->
+              <div id="page_title" class="serif">
+                <h2>
+                  <%= @title %>
+                </h2>
+              </div><!-- page_title -->
+              <div class="spacer">
+              </div><!-- spacer -->
+              <div id="breadcrumbs">          
+                <div class="left">
+                  <%= render :partial => "#{controller.controller_name}/breadcrumb" %>
+                </div><!-- left -->      
+                <div class="right">
+                </div><!-- right -->        
+              </div><!-- breadcrumbs-->
+              <div class="spacer"></div>
+              <% if flash[:notice] %>
+                <div class="notice">
+                  <%= flash[:notice] %>
+                </div><!-- notice -->
+              <% end %>
+              <div id="content">
+                <%= yield %>
+              </div><!-- content-->
+              <div class="spacer">
+              </div><!-- spacer -->
+              <div id="footer">
+                Copyright 2011 - Made by Somnie  
+              </div><!-- footer--> 
+            </div><!-- container -->
+          </div><!-- container_shadow -->
+        </div><!-- page_wrapper -->
+      </div><!-- page -->
+      <div id="bottom_shadow">
+      </div><!-- footer_image -->
+    </div><!-- page_holder -->
   </body>
   
 </html>
