@@ -29,6 +29,7 @@ GEM
       activesupport (= 3.0.3)
     activesupport (3.0.3)
     arel (2.0.10)
+    bcrypt-ruby (2.1.4)
     builder (2.1.2)
     cocaine (0.1.0)
     erubis (2.6.6)
@@ -81,6 +82,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby
   formtastic (= 1.2.4)
   paperclip (~> 2.3)
   rails (= 3.0.3)

@@ -1,15 +1,23 @@
-1309848206
+1309865128
 AddProducts	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	class AddProducts 
 Application	/home/somnie/www/store/config/application.rb	  class Application 
 ApplicationController	/home/somnie/www/store/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/somnie/www/store/app/helpers/application_helper.rb	module ApplicationHelper
 BrowsingTest	/home/somnie/www/store/test/performance/browsing_test.rb	class BrowsingTest 
+CreateUsers	/home/somnie/www/store/db/migrate/20110705070829_create_users.rb	class CreateUsers 
 DescriptionMod	/home/somnie/www/store/db/migrate/20110703113407_description_mod.rb	class DescriptionMod 
 ImgManager	/home/somnie/www/store/db/migrate/20110703050204_img_manager.rb	class ImgManager 
 Product	/home/somnie/www/store/app/models/product.rb	class Product 
 ProductsController	/home/somnie/www/store/app/controllers/products_controller.rb	class ProductsController 
+SITE_COPYRIGHT	/home/somnie/www/store/config/application.rb	SITE_COPYRIGHT =
+SITE_DESC	/home/somnie/www/store/config/application.rb	SITE_DESC =
+SITE_NAME	/home/somnie/www/store/config/application.rb	SITE_NAME =
 Service	/home/somnie/www/store/app/models/service.rb	class Service 
 ServicesController	/home/somnie/www/store/app/controllers/services_controller.rb	class ServicesController 
+SessionsController	/home/somnie/www/store/app/controllers/sessions_controller.rb	class SessionsController 
+SessionsControllerTest	/home/somnie/www/store/test/functional/sessions_controller_test.rb	class SessionsControllerTest 
+SessionsHelper	/home/somnie/www/store/app/helpers/sessions_helper.rb	module SessionsHelper
+SessionsHelperTest	/home/somnie/www/store/test/unit/helpers/sessions_helper_test.rb	class SessionsHelperTest 
 Site	/home/somnie/www/store/db/migrate/20110705031237_site.rb	class Site 
 SiteInfoTest	/home/somnie/www/store/test/unit/site_info_test.rb	class SiteInfoTest 
 SiteInfosControllerTest	/home/somnie/www/store/test/functional/site_infos_controller_test.rb	class SiteInfosControllerTest 
@@ -18,6 +26,12 @@ Store	/home/somnie/www/store/config/application.rb	module Store
 Str	/home/somnie/www/store/public/javascripts/prototype.js	function Str(key, holder, stack)
 TestCase	/home/somnie/www/store/test/test_helper.rb	class ActiveSupport::TestCase
 Type	/home/somnie/www/store/public/javascripts/prototype.js	function Type(o)
+User	/home/somnie/www/store/app/models/user.rb	class User 
+UserTest	/home/somnie/www/store/test/unit/user_test.rb	class UserTest 
+UsersController	/home/somnie/www/store/app/controllers/users_controller.rb	class UsersController 
+UsersControllerTest	/home/somnie/www/store/test/functional/users_controller_test.rb	class UsersControllerTest 
+UsersHelper	/home/somnie/www/store/app/helpers/users_helper.rb	module UsersHelper
+UsersHelperTest	/home/somnie/www/store/test/unit/helpers/users_helper_test.rb	class UsersHelperTest 
 abs	/home/somnie/www/store/public/javascripts/prototype.js	function abs()
 absolutize	/home/somnie/www/store/public/javascripts/prototype.js	function absolutize(element)
 addMethods	/home/somnie/www/store/public/javascripts/prototype.js	function addMethods(source)
@@ -25,7 +39,7 @@ addText	/home/somnie/www/store/public/javascripts/controls.js	function addText(m
 all	/home/somnie/www/store/public/javascripts/prototype.js	function all(iterator, context)
 any	/home/somnie/www/store/public/javascripts/prototype.js	function any(iterator, context)
 argumentNames	/home/somnie/www/store/public/javascripts/prototype.js	function argumentNames()
-authenticate	/home/somnie/www/store/app/controllers/application_controller.rb	  def authenticate
+authenticate	/home/somnie/www/store/app/models/user.rb	  def self.authenticate(email, password)
 bind	/home/somnie/www/store/public/javascripts/prototype.js	function bind(context)
 bindAsEventListener	/home/somnie/www/store/public/javascripts/prototype.js	function bindAsEventListener(context)
 blank	/home/somnie/www/store/public/javascripts/prototype.js	function blank()
@@ -44,10 +58,13 @@ concat	/home/somnie/www/store/public/javascripts/prototype.js	function concat()
 copy	/home/somnie/www/store/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
 create	/home/somnie/www/store/app/controllers/products_controller.rb	  def create
 create	/home/somnie/www/store/app/controllers/services_controller.rb	  def create
+create	/home/somnie/www/store/app/controllers/sessions_controller.rb	  def create
+create	/home/somnie/www/store/app/controllers/users_controller.rb	  def create
 create	/home/somnie/www/store/public/javascripts/prototype.js	function create()
 cssNameFor	/home/somnie/www/store/public/javascripts/prototype.js	function cssNameFor(key)
 cumulativeOffset	/home/somnie/www/store/public/javascripts/prototype.js	function cumulativeOffset(element)
 cumulativeScrollOffset	/home/somnie/www/store/public/javascripts/prototype.js	function cumulativeScrollOffset(element)
+current_user	/home/somnie/www/store/app/controllers/application_controller.rb	  def current_user
 curry	/home/somnie/www/store/public/javascripts/prototype.js	function curry()
 dasherize	/home/somnie/www/store/public/javascripts/prototype.js	function dasherize()
 defer	/home/somnie/www/store/public/javascripts/prototype.js	function defer()
@@ -55,6 +72,7 @@ define	/home/somnie/www/store/public/javascripts/prototype.js	function define(D)
 delay	/home/somnie/www/store/public/javascripts/prototype.js	function delay(timeout)
 destroy	/home/somnie/www/store/app/controllers/products_controller.rb	  def destroy
 destroy	/home/somnie/www/store/app/controllers/services_controller.rb	  def destroy
+destroy	/home/somnie/www/store/app/controllers/sessions_controller.rb	  def destroy
 detect	/home/somnie/www/store/public/javascripts/prototype.js	function detect(iterator, context)
 dirCheck	/home/somnie/www/store/public/javascripts/prototype.js	function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dirNodeCheck	/home/somnie/www/store/public/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
@@ -63,6 +81,7 @@ down	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	  def self
 down	/home/somnie/www/store/db/migrate/20110703050204_img_manager.rb	  def self.down
 down	/home/somnie/www/store/db/migrate/20110703113407_description_mod.rb	  def self.down
 down	/home/somnie/www/store/db/migrate/20110705031237_site.rb	  def self.down
+down	/home/somnie/www/store/db/migrate/20110705070829_create_users.rb	  def self.down
 each	/home/somnie/www/store/public/javascripts/prototype.js	function each(iterator)
 each	/home/somnie/www/store/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/somnie/www/store/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -70,6 +89,7 @@ edit	/home/somnie/www/store/app/controllers/products_controller.rb	  def edit
 edit	/home/somnie/www/store/app/controllers/services_controller.rb	  def edit
 element	/home/somnie/www/store/public/javascripts/prototype.js	function element(event)
 empty	/home/somnie/www/store/public/javascripts/prototype.js	function empty()
+encrypt_password	/home/somnie/www/store/app/models/user.rb	  def encrypt_password
 endsWith	/home/somnie/www/store/public/javascripts/prototype.js	function endsWith(pattern)
 escapeHTML	/home/somnie/www/store/public/javascripts/prototype.js	function escapeHTML()
 evalJSON	/home/somnie/www/store/public/javascripts/prototype.js	function evalJSON(sanitize)
@@ -152,11 +172,14 @@ methodize	/home/somnie/www/store/public/javascripts/prototype.js	function method
 min	/home/somnie/www/store/public/javascripts/prototype.js	function min(iterator, context)
 new	/home/somnie/www/store/app/controllers/products_controller.rb	  def new
 new	/home/somnie/www/store/app/controllers/services_controller.rb	  def new
+new	/home/somnie/www/store/app/controllers/sessions_controller.rb	  def new
+new	/home/somnie/www/store/app/controllers/users_controller.rb	  def new
 observe	/home/somnie/www/store/public/javascripts/prototype.js	function observe(element, eventName, handler)
 on	/home/somnie/www/store/public/javascripts/prototype.js	function on(element, eventName, selector, callback)
 parseColor	/home/somnie/www/store/public/javascripts/effects.js	function parseColor(color)
 parseJSON	/home/somnie/www/store/public/javascripts/prototype.js	function parseJSON()
 partition	/home/somnie/www/store/public/javascripts/prototype.js	function partition(iterator, context)
+password	/home/somnie/www/store/app/models/user.rb	  attr_accessor :password
 pluck	/home/somnie/www/store/public/javascripts/prototype.js	function pluck(property)
 pointer	/home/somnie/www/store/public/javascripts/prototype.js	function pointer(event)
 pointerX	/home/somnie/www/store/public/javascripts/prototype.js	function pointerX(event)
@@ -217,6 +240,7 @@ up	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	  def self.u
 up	/home/somnie/www/store/db/migrate/20110703050204_img_manager.rb	  def self.up
 up	/home/somnie/www/store/db/migrate/20110703113407_description_mod.rb	  def self.up
 up	/home/somnie/www/store/db/migrate/20110705031237_site.rb	  def self.up
+up	/home/somnie/www/store/db/migrate/20110705070829_create_users.rb	  def self.up
 update	/home/somnie/www/store/app/controllers/products_controller.rb	  def update
 update	/home/somnie/www/store/app/controllers/services_controller.rb	  def update
 update	/home/somnie/www/store/public/javascripts/prototype.js	function update(array, args)

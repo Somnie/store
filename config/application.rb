@@ -40,3 +40,8 @@ module Store
     config.filter_parameters += [:password]
   end
 end
+
+
+SITE_NAME = "Wildfire Herbalism"
+SITE_DESC = "Herbalism is good!"
+SITE_COPYRIGHT = "Copyright 2011 - Created by Somnie"

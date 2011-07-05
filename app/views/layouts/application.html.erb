@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      <%= $site_name %>
+      <%= SITE_NAME %>
     </title>
     <%= stylesheet_link_tag 'formtastic', 'my_formtastic_changes' %>
     <!--[if IE 6]><%= stylesheet_link_tag 'formtastic_ie6' %><![endif]-->
@@ -24,7 +24,7 @@
              <div id="container">
                <div id="header">
                  <h1 class="serif">
-                   <%= $site_name %>
+                   <%= SITE_NAME %>
                  </h1>       
                </div><!-- header -->
         
@@ -57,13 +57,27 @@
                <% end %>
                <div id="content">
                  <%= yield %>
+                <div id="user_nav">
+                  <% if current_user %>
+                    Logged in as <%= current_user.email %>.
+                    <%= link_to "Log out", log_out_path %>
+                  <% else %>
+                    <%= link_to "Sign up", sign_up_path %> or
+                    <%= link_to "log in", log_in_path %>
+                  <% end %>
+                </div>
+
+                <% flash.each do |name, msg| %>
+                  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+                <% end %>
+
                </div><!-- content-->
         
                <div class="spacer">
                </div><!-- spacer -->
         
                <div id="footer">
-                 <%= $site_copyright %>  
+                 <%= SITE_COPYRIGHT %>  
                </div><!-- footer--> 
              </div><!-- container -->
            </div><!-- container_shadow -->
@@ -75,3 +89,6 @@
   </body>
   
 </html>
+
+
+
