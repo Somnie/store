@@ -1,3 +1,5 @@
-<%= 
-   link_to("Home", services_path)+ " -> " + "#{@service.name}" 
-%>
+<% if controller.action_name == "show" %>
+<%= link_to("Home", services_path) +" > " + link_to("#{@service.name}", service_products_path(@service)) + " > " + "#{@product.name}" %>
+<% else %>
+<%= link_to("Home", services_path) +" > " + "#{@service.name}" %>
+<% end %>

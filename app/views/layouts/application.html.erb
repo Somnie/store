@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      Wild Fire Herbalists
+      <%= $site_name %>
     </title>
     <%= stylesheet_link_tag 'formtastic', 'my_formtastic_changes' %>
     <!--[if IE 6]><%= stylesheet_link_tag 'formtastic_ie6' %><![endif]-->
@@ -20,49 +20,57 @@
       </div><!-- top_shadow -->
       <div id="page">
         <div id="page_wrapper">
-          <div id="container_shadow">
-            <div id="container">
-              <div id="header">
-                <h1 class="serif">
-                  Wild Fire Herbalists
-                </h1>       
-              </div><!-- header -->
-              <div class="spacer">
-              </div><!-- spacer -->
-              <div id="page_title" class="serif">
-                <h2>
-                  <%= @title %>
-                </h2>
-              </div><!-- page_title -->
-              <div class="spacer">
-              </div><!-- spacer -->
-              <div id="breadcrumbs">          
-                <div class="left">
-                  <%= render :partial => "#{controller.controller_name}/breadcrumb" %>
-                </div><!-- left -->      
-                <div class="right">
-                </div><!-- right -->        
-              </div><!-- breadcrumbs-->
-              <div class="spacer"></div>
-              <% if flash[:notice] %>
-                <div class="notice">
-                  <%= flash[:notice] %>
-                </div><!-- notice -->
-              <% end %>
-              <div id="content">
-                <%= yield %>
-              </div><!-- content-->
-              <div class="spacer">
-              </div><!-- spacer -->
-              <div id="footer">
-                Copyright 2011 - Made by Somnie  
-              </div><!-- footer--> 
-            </div><!-- container -->
-          </div><!-- container_shadow -->
+           <div id="container_shadow">
+             <div id="container">
+               <div id="header">
+                 <h1 class="serif">
+                   <%= $site_name %>
+                 </h1>       
+               </div><!-- header -->
+        
+               <div class="spacer">
+               </div><!-- spacer -->
+        
+               <div id="page_title" class="serif">
+                 <h2>
+                   <%= @title %>
+                 </h2>
+               </div><!-- page_title -->
+        
+               <div class="spacer">
+               </div><!-- spacer -->
+        
+               <div id="breadcrumbs">          
+                 <div class="left">
+                   <%= render :partial => "#{controller.controller_name}/breadcrumb" %>
+                 </div><!-- left -->      
+                 <div class="right">
+                 </div><!-- right -->        
+               </div><!-- breadcrumbs-->
+        
+               <div class="spacer">
+                 </div>
+               <% if flash[:notice] %>
+                 <div class="notice">
+                   <%= flash[:notice] %>
+                 </div><!-- notice -->
+               <% end %>
+               <div id="content">
+                 <%= yield %>
+               </div><!-- content-->
+        
+               <div class="spacer">
+               </div><!-- spacer -->
+        
+               <div id="footer">
+                 <%= $site_copyright %>  
+               </div><!-- footer--> 
+             </div><!-- container -->
+           </div><!-- container_shadow -->
         </div><!-- page_wrapper -->
       </div><!-- page -->
       <div id="bottom_shadow">
-      </div><!-- footer_image -->
+      </div><!-- bottom_shadow -->
     </div><!-- page_holder -->
   </body>
   

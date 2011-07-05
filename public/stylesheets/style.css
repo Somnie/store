@@ -38,11 +38,11 @@ h1, h2
 }
 h1
 {
-  font-size:45px;
+  font-size:3em;
 }
 h2
 {
-  font-size:20px;
+  font-size:1.5em;
 }
 table 
 { 
@@ -75,29 +75,41 @@ td#icons
 {
   font-weight:bold;
 }
-#serv_desc
+#serv_desc, #prod_desc
 {
-  height:120px;
+  height:110px;
 }
 #serv_func
 {
 
 }
+#serv_update, #prod_update
+{
+  float:right;
+}
 #prod_title
 {
   font-weight:bold;
 }
-#prod_desc
-{
 
-}
 #prod_func
 {
 
 }
-
+.page_name
+{
+  font-weight:bold;
+  font-size:1.2em;
+}
+.page_desc
+{
+  padding:.5em 20px;
+}
 .serif
 {
   font-family:"Times New Roman", Times, serif;
 }
-
+#breadcrumbs a{
+  text-decoration:none;
+  color:#FFFFFF;
+}

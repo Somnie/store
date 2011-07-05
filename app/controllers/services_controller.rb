@@ -2,7 +2,7 @@ class ServicesController < ApplicationController
   before_filter :authenticate, :except => [:index]
     
   def index    
-     @services = Service.all      
+     @services = Service.all    
   end
 
   def new

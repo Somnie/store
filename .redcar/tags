@@ -1,4 +1,4 @@
-1309778169
+1309847278
 AddProducts	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	class AddProducts 
 Application	/home/somnie/www/store/config/application.rb	  class Application 
 ApplicationController	/home/somnie/www/store/app/controllers/application_controller.rb	class ApplicationController 
@@ -10,6 +10,10 @@ Product	/home/somnie/www/store/app/models/product.rb	class Product
 ProductsController	/home/somnie/www/store/app/controllers/products_controller.rb	class ProductsController 
 Service	/home/somnie/www/store/app/models/service.rb	class Service 
 ServicesController	/home/somnie/www/store/app/controllers/services_controller.rb	class ServicesController 
+Site	/home/somnie/www/store/db/migrate/20110705031237_site.rb	class Site 
+SiteInfoTest	/home/somnie/www/store/test/unit/site_info_test.rb	class SiteInfoTest 
+SiteInfosControllerTest	/home/somnie/www/store/test/functional/site_infos_controller_test.rb	class SiteInfosControllerTest 
+SiteInfosHelperTest	/home/somnie/www/store/test/unit/helpers/site_infos_helper_test.rb	class SiteInfosHelperTest 
 Store	/home/somnie/www/store/config/application.rb	module Store
 Str	/home/somnie/www/store/public/javascripts/prototype.js	function Str(key, holder, stack)
 TestCase	/home/somnie/www/store/test/test_helper.rb	class ActiveSupport::TestCase
@@ -58,6 +62,7 @@ dispatch	/home/somnie/www/store/public/javascripts/effects.js	function dispatch(
 down	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	  def self.down
 down	/home/somnie/www/store/db/migrate/20110703050204_img_manager.rb	  def self.down
 down	/home/somnie/www/store/db/migrate/20110703113407_description_mod.rb	  def self.down
+down	/home/somnie/www/store/db/migrate/20110705031237_site.rb	  def self.down
 each	/home/somnie/www/store/public/javascripts/prototype.js	function each(iterator)
 each	/home/somnie/www/store/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/somnie/www/store/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -211,6 +216,7 @@ unset	/home/somnie/www/store/public/javascripts/prototype.js	function unset(key)
 up	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	  def self.up
 up	/home/somnie/www/store/db/migrate/20110703050204_img_manager.rb	  def self.up
 up	/home/somnie/www/store/db/migrate/20110703113407_description_mod.rb	  def self.up
+up	/home/somnie/www/store/db/migrate/20110705031237_site.rb	  def self.up
 update	/home/somnie/www/store/app/controllers/products_controller.rb	  def update
 update	/home/somnie/www/store/app/controllers/services_controller.rb	  def update
 update	/home/somnie/www/store/public/javascripts/prototype.js	function update(array, args)

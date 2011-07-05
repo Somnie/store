@@ -1,4 +1,10 @@
 <% @title = "Services" %>
+<div class="page_name">
+  <%= $site_name %>
+</div>
+<div class="page_desc">
+  "<%= $site_desc %>"
+</div>
 
 <table>  
     <% i = 1%>
@@ -20,10 +26,13 @@
         <div id="serv_desc">
           <%= serv.desc %>
         </div>
+        <div id="serv_update">
+          last updated: <%= time_ago_in_words serv.updated_at %> ago
+        </div>
       </td>
     </tr>
   <% end %>
 </table>
-<div id="serv_func">
+<div id="serv_func">  
   <%= link_to(image_tag("icons/heart_add.png"), new_service_path ) %> Create
 </div>

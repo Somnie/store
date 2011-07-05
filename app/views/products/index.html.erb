@@ -1,5 +1,10 @@
 <% @title = "#{@service.name}: Product Inventory" %>
-
+<div class="page_name">
+  <%= @service.name %>
+</div>
+<div class="page_desc">
+  "<%= @service.desc %>"
+</div>
 <table>  
   <% i = 1 %>
   <% @products.each do |prod| %>
@@ -20,6 +25,9 @@
         <div id="prod_desc">
           <%= prod.desc %>
         </div>
+        <div id="prod_update">
+          last updated: <%= time_ago_in_words prod.created_at %> ago
+        </div
       </td>
     </tr>
   <% end %>

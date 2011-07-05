@@ -1,15 +1,14 @@
 <% @title = "Description of #{@service.name}" %>
-<% @products.each do |prod| %>
-<div id="show_img">
-  <%= image_tag(prod.img.url(:medium)) || "" %>
-</div>
-<div id="show_name">
-  <%= prod.name%>
-</div>
-<div id="show_desc_long">
-  <%= prod.desc_long %>
-</div>
-<div id="show_price">
-  Cost = <%= number_to_currency(prod.price) %>
-</div>
-  <% end %>
+
+  <div id="show_img">
+    <%= image_tag(@product.img.url(:medium)) || "" %>
+  </div>
+  <div id="show_name">
+    <%= @product.name%>
+  </div>
+  <div id="show_desc_long">
+    <%= @product.desc_long %>
+  </div>
+  <div id="prod_update">
+    last updated: <%= time_ago_in_words @product.created_at %> ago
+  </div>
