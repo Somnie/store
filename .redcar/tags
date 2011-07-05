@@ -1,4 +1,4 @@
-1309865128
+1309865403
 AddProducts	/home/somnie/www/store/db/migrate/20110702040501_add_products.rb	class AddProducts 
 Application	/home/somnie/www/store/config/application.rb	  class Application 
 ApplicationController	/home/somnie/www/store/app/controllers/application_controller.rb	class ApplicationController 
